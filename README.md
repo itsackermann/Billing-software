@@ -19,6 +19,15 @@ This project uses the following 4 tables in MySQL to implement the billing syste
 >*Payment_Status-('U' or 'P')This field is used to indicate whether the total price of the current purchase has been paid or not.
 
 `product_details`:This table contains the basic details like price of the product,available stock of the product and total stock sold corresponding each product.
+>*pid-This field is used to store the unique product id assigned to each product. This acts helpful in separating products with same name from different brands and products with same name but different cost.
+>
+>*product_name-This field is used to store the name of the product.
+>
+>*Quantity_sold-This field is used to store the total stock of the product sold.
+>
+>*price_per_unit:This field is used to store the price of the unit for a basic unit of that product.For ex:For 'RICE'-50Rs/Kg.
+>
+>*Stock_available:This field is used to indicate the remaining available stock of the particular product.
 
 `customer_details`:This table is used to store the phone number and name of the customer along with an unique costumer id allocated to each customer based on the phone number.
 
