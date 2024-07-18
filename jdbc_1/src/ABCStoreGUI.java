@@ -3,17 +3,19 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.util.*;
 import java.sql.Connection;
 import java.sql.DriverManager;
 
 public class ABCStoreGUI {
 
     public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
         String jdbcURL = "jdbc:mysql://localhost:3306/zoho"; // Replace with your database URL
         String jdbcUsername = "root"; // Replace with your MySQL username
-        String jdbcPassword = "password"; // Replace with your MySQL password
-
+        String jdbcPassword; // Replace with your MySQL password
+        System.out.println("ENTER YOUR PASSWORD:");
+        jdbcPassword=sc.next();
         try{
         Class.forName("com.mysql.cj.jdbc.Driver");
 
