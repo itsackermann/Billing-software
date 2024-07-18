@@ -12,7 +12,9 @@ public class ABCStoreGUI {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         String jdbcURL = "jdbc:mysql://localhost:3306/zoho"; // Replace with your database URL
-        String jdbcUsername = "root"; // Replace with your MySQL username
+        String jdbcUsername ; // Replace with your MySQL username
+        System.out.println("ENTER YOUR USERNAME:");
+        jdbcUsername=sc.next();
         String jdbcPassword; // Replace with your MySQL password
         System.out.println("ENTER YOUR PASSWORD:");
         jdbcPassword=sc.next();
