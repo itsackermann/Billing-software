@@ -136,7 +136,6 @@ Generates the final bill by opening a new frame to enter customer details and pa
 - `JLabel totalLabel`: Label for the total amount.
 - `JTextField totalField`: Text field for displaying the total amount.
 - `String paymentStatus`: The selected payment status.
-- `String formattedDate`: The current date and time formatted as a string.
 - `PreparedStatement stmt3`: Prepared statement for inserting data into the `time` table.
 - `String ph_no`: The phone number entered by the user.
 - `String name`: The name entered by the user.
