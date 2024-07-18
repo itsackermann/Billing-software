@@ -30,5 +30,10 @@ This project uses the following 4 tables in MySQL to implement the billing syste
 >*Stock_available:This field is used to indicate the remaining available stock of the particular product.
 
 `customer_details`:This table is used to store the phone number and name of the customer along with an unique costumer id allocated to each customer based on the phone number.
+>*cid-This field is to represent each customer uniquely (assigned based on unique phone numbeers).
+>
+>*name-This field is used to store the name of each customer(Only the first given name for a specific phone number gets stored).
+>
+>*phone_
 
 `billing`:This table is used to store the product id and the quantity of product purchased temporarily.
