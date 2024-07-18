@@ -12,7 +12,11 @@ This project uses the following 4 tables in MySQL to implement the billing syste
 >
 >*Quantity-This field contains the quantity of each purchased product in comma separated format.
 >
->*Cid-(Customer ID)This field is used to represe
+>*Cid-(Customer ID)This field is used to represent the customer involved in the current purchase.
+>
+>*Price-This field is used to store the total cost of the current purchase.
+>
+>*Payment_Status-('U' or 'P')This field is used to indicate whether the total price of the current purchase has been paid or not.
 
 `product_details`:This table contains the basic details like price of the product,available stock of the product and total stock sold corresponding each product.
 
